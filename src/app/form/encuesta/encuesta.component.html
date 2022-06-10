@@ -1,0 +1,127 @@
+<div class="back-c container d-flex justify-content-center">
+    <div >
+        <h1 class="text-center" style="text-decoration: underline; 
+                    text-decoration-color: #111212;
+                    font-weight: bold;
+                    margin-top: 30px;
+                    margin-left: 40px;">{{'encuesta copec' | uppercase}}
+                    <img align="right"
+                    style="position: absolute;"
+                     src="../../../assets/img/cuestionario-preguntas-diseno-de-cuestionario.png"
+                      width="40"></h1>
+    <div>
+        <form [formGroup]="formulario">
+            <div class="mb-4 text-center">
+                <input type="text" 
+                    pInputText style="background-color: white; color: black;"
+                    placeholder="Ingrese su nombre"
+                    formControlName="nombre"/>
+            </div>
+            <div class="mb-5" fxLayout="column">
+                    <h5 class="text-center" style="font-weight: bold;">¿Ha experimentado cualquiera de los siguientes síntomas de COVID-19 dentro de las últimas 48 horas?</h5>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="fiebre">
+                        <p><strong>Fiebre o escalofríos </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary"   value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="tos">
+                        <p><strong>Tos </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="falta de aire">
+                        <p><strong>Falta de aire o dificultad de respirar </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="fatiga">
+                        <p><strong>Fatiga </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="dolores musculares">
+                        <p><strong>Dolores musculares o del cuerpo </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="dolor de cabeza">
+                        <p><strong>Dolor de cabeza </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="perdida de gusto">
+                        <p><strong>Nueva perdida del gusto u olfato </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="dolor garganta">
+                        <p><strong>Dolor de garganta </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <br>
+                    <hr>
+                    <h5 class="text-center" style="font-weight: bold;">Estatuto temporal de emergencia</h5>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="congestion">
+                        <p><strong>Congestión o goteo nasal </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="nauseas">
+                        <p><strong>Nauseas o vomito </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <mat-radio-group aria-label="Select an option" formControlName="diarrea">
+                        <p><strong>Diarrea </strong><mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button></p>
+                        </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <p><strong>¿Ha dado positivo en la prueba de COVID-19 en los últimos 10 días?</strong></p>
+                        <mat-radio-group aria-label="Select an option" formControlName="positivo covid">
+                            <mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button>
+                          </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <p><strong>¿Se encuentra actualmente en la espera de los resultados de la prueba de COVID-19?</strong></p>
+                        <mat-radio-group aria-label="Select an option" formControlName="espera resultado covid">
+                            <mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button>
+                          </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <p><strong>¿Ha sido diagnosticado con COVID-19 por un proveedor con licencia
+                            médica (por ejemplo, un doctor, enfermera, farmacéutico, u otro) en
+                            los últimos 10 días?</strong></p>
+                        <mat-radio-group aria-label="Select an option" formControlName="diagnosticado covid">
+                            <mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button>
+                          </mat-radio-group>
+                    </div>
+                    <div class="mt-5">
+                        <p><strong>¿Se le ha dicho que se sospecha que usted tiene COVID-19 por un
+                            proveedor con licencia médica en los últimos 10 días?</strong></p>
+                        <mat-radio-group aria-label="Select an option" formControlName="sospecha covid">
+                            <mat-radio-button color="primary" value="Si">Si</mat-radio-button>
+                            <mat-radio-button color="primary" value="No">No</mat-radio-button>
+                          </mat-radio-group>
+                    </div>
+                </div>
+          </form>
+          <br>
+    </div>
+    </div>
+</div>
